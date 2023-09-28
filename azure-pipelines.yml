@@ -20,9 +20,9 @@ steps:
   displayName: 'Run a multi-line script'
 
 - task: JavaToolInstaller@0
-    inputs:
-      versionSpec: '8'
-      cleanDestinationDirectory: true
+  inputs:
+    versionSpec: '8'
+    cleanDestinationDirectory: true
 - task: Maven@4
   inputs:
     mavenPomFile: 'pom.xml'
