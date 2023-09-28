@@ -10,7 +10,6 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 variables:
-- group: group
 - name: BRIDGE_POLARIS_APPLICATION_NAME
   value: 'Jwtest'      #change this name
 - name: BRIDGE_POLARIS_PROJECT_NAME
