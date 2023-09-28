@@ -35,7 +35,11 @@ steps:
     mavenAuthenticateFeed: false
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
+
 - task: Bash@3
+  env:
+      BRIDGE_POLARIS_ACCESSTOKEN: $(BRIDGE_POLARIS_ACCESSTOKEN)
+      BRIDGE_POLARIS_SERVERURL: $(BRIDGE_POLARIS_SERVERURL)
   inputs:
     targetType: 'inline'
     script: |
