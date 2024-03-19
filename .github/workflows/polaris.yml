@@ -11,7 +11,7 @@ jobs:
   polaris:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout Source
+    - name: Checkout Source 1
       uses: actions/checkout@v4
     - name: Setup Java JDK
       uses: actions/setup-java@v4
